@@ -1,0 +1,33 @@
+.five {
+
+    margin-block-end: 100px;
+    
+    &__images {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+}
+
+
+@media screen and (min-width: 90rem) {
+    .five {
+        &__images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 2em;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .five {
+        &__images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 2em;
+        }
+    }
+}

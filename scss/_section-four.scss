@@ -1,0 +1,37 @@
+.four {
+
+    margin-block-end: 100px;
+    
+    &__intro {
+        margin-block-end: 70px;
+    }
+
+    &__feature {
+        margin-block-end: 45px;
+    }
+
+    &__feature h3 {
+        margin-block-start: 30px;
+    }
+
+    &__feature__img {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+}
+
+
+@media screen and (min-width: 768px) {
+    .four {
+        &__features{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
+            gap: 2em;
+        }
+    }
+}

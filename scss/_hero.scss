@@ -1,0 +1,49 @@
+.hero {
+    background-image: url("./../images/bg-header-mobile.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 590px;
+
+    &__logo {
+        font-size: 0;
+    }
+
+    &__title {
+        color: $darkGrayishBlue;
+        font-size: 1.875rem; //30px
+        margin-block-start: 3.125rem; //50px
+        margin-block-end: 1.25rem; //20px
+    }
+
+    &__paragraph {
+        font-size: 1.05rem; //16.8px
+        line-height: 1.6;
+        margin-block-end: 40px;
+    }
+
+    @media screen and (min-width: 768px) {
+        & {
+            background-image: url("./../images/bg-header-desktop.png");
+            min-height: 670px;
+        }
+    }
+}
+
+@media screen and (min-width: 90rem) {
+    .hero {
+
+        &__logo img {
+            inline-size: 124px;
+            block-size: 125px;
+        }
+
+        &__title {
+            font-size: 2.75rem; //44px
+            margin-block-start: 4.375rem; //70px
+        }
+
+        &__paragraph {
+            font-size: 1.25rem; //20px
+        }
+    }
+}

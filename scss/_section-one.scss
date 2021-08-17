@@ -1,0 +1,16 @@
+.one {
+    margin-block-start: 3.75rem;
+    margin-block-end: 3.4375rem;
+
+    & .container {
+        margin: auto;
+    }
+}
+
+
+@media screen and (min-width: 90rem) {
+    .one {
+        margin-block-start: 5rem;
+        margin-block-end: 5rem;
+    }
+}

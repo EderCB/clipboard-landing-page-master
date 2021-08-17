@@ -1,0 +1,49 @@
+.two {
+
+    margin-block-end: 150px;
+
+    &__img {
+        text-align: center;
+    }
+
+    &__cols {
+        text-align: center;
+        
+        p {
+            max-inline-size: 380px;
+            margin: 0;
+        }
+    }
+    
+
+
+    @media screen and (min-width: 1024px) {
+
+        &.container {
+            padding-inline-start: 0;
+            padding-inline-end: 0;
+            margin-block-end: 200px;
+
+            display: flex;
+            gap: 15rem;
+        }
+
+        &__img { 
+            position: relative;
+            flex: 1;
+        }
+
+        &__img img {
+            position: absolute;
+            max-inline-size: initial;
+            left: -190px;
+        }
+
+        &__cols {
+            text-align: start;
+            flex: 1;
+        }
+    }
+
+    
+}
